@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=BioRhyme:wght@400;700;800&family=Josefin+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #FED43A;
+    
+}
+.navbar {
+    position: fixed;
+    width: 5rem;
+    background-color: #212529;
+    list-style: none;
+    height: 100vh;
+    transition: 200ms ease;
+    z-index: 99;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+.navbar li {
+    list-style: none;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.nav-link, .social {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #adb5bd;
+    transition: 400ms;
+}
+
+.nav-link:hover, .social:hover {
+    background-color: #343a40;
+    color: #FED43A;
+}
+
+.link-text {
+    display: none;
+}
+
+.navbar svg {
+    width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+.navbar:hover {
+    width: 12rem;
+
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+.nav-item {
+    width: 100%;
+  }
+
+/* .active{
+    color: #FED43A;;
+} */
+
+.navbar-nav li.active a{
+    color: #FED43A;
+}
+main {
+    margin-left: 5rem;
+    padding: 2rem;
+
+}
+.container {
+    padding: 2rem;
+    font-family: 'BioRhyme', serif;
+    height: 100vh;
+
+}
+
+
+.intro {
+    color: #212529;
+    min-width: 50%;
+}
+
+.intro h1 {
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 8rem;
+
+}
+
+.intro h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+
+}
+
+.intro p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.skills-section {
+    color: #212529;
+
+}
+.skills-section h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    
+}
+.skills-section p {
+    font-size: 2rem;
+}
+
+.skills-content {
+    background-color: #f8f9fa;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px 10px rgba(92, 92, 92, 0.2);
+    padding: 2rem;
+    margin-top: 3rem;
+    min-width: 70%;
+}
+
+
+/* Progress bar styling section */
+
+.bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    padding-right: 5px;
+}
+
+.html, .css, .js, .python {
+    border-radius: 5px;
+}
+.html {
+    width: 90%; 
+    background-color: #264653;
+
+}
+
+.css {
+    width: 60%; 
+    background-color: #2a9d8f;
+}
+
+.js {
+    width: 20%; 
+    background-color: #e9c46a;
+}
+
+.python {
+    width: 85%; 
+    background-color: #f4a261;
+}
+
+.c {
+    width: 75%; 
+    background-color: #e76f51;
+}
+@media only screen and (max-width: 800px) {
+    main {
+        margin: 0;
+    }
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .navbar div:first-child {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar:hover {
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .navbar:hover .link-text{
+        display: none;
+    }
+    .link-text {
+        display: none;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+
+    
+    .intro h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 3rem;
+    }
+
+    .intro h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    
+    }
+    
+    .intro p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+    .skills-section {
+        
+    }
+    .skills-section h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        
+    }
+
+    .skills-content {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .skills-content p{
+        font-size: 1rem;
+    }
+
+}
